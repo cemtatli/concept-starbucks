@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,900;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  list-style: none;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+}
+
+.container header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container header ul {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container header ul a {
+  text-decoration: none;
+  display: inline-block;
+  color: #333;
+  font-weight: 700;
+  margin-left: 40px;
+}
+
+.container header .menu--logo {
+  position: relative;
+  max-width: 85px;
+}
+
+.container .content {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .content .text--content {
+  position: relative;
+  max-width: 600px;
+}
+
+.container .content .text--content h2 {
+  color: #333;
+  font-size: 60px;
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+.container .content .text--content h2 span {
+  color: #017143;
+  font-weight: 900;
+  font-size: 1.2em;
+}
+
+.container .content .text--content p {
+  margin-top: 15px;
+  color: #333;
+  font-weight: 500;
+}
+
+.container .content .text--content a {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 8px 40px;
+  background: #017143;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.container .content .images--area {
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 50px;
+  margin-top: 50px;
+}
+
+.container .content .images--area img {
+  max-width: 400px;
+}
+
+.container .thumb {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .thumb li {
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.container .thumb li:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+
+.container .thumb li img {
+  max-width: 60px;
+}
+
+.container .social--media {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .social--media a {
+  display: inline-block;
+  margin: 5px 0;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.container .circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #017143;
+  -webkit-clip-path: circle(750px at right 850px);
+          clip-path: circle(750px at right 850px);
+}
+/*# sourceMappingURL=main.css.map */

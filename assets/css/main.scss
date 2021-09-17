@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,900;1,700&display=swap");
+
+$color-1: #333;
+$color-2: #017143;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  list-style: none;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      position: relative;
+      display: flex;
+
+      a {
+        text-decoration: none;
+        display: inline-block;
+        color: #333;
+        font-weight: 700;
+        margin-left: 40px;
+      }
+    }
+
+    .menu--logo {
+      position: relative;
+      max-width: 85px;
+    }
+  }
+
+  .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .text--content {
+      position: relative;
+      max-width: 600px;
+
+      h2 {
+        color: $color-1;
+        font-size: 60px;
+        line-height: 1.15;
+        font-weight: 700;
+
+        span {
+          color: $color-2;
+          font-weight: 900;
+          font-size: 1.2em;
+        }
+      }
+      p {
+        margin-top: 15px;
+        color: $color-1;
+        font-weight: 500;
+      }
+      a {
+        display: inline-block;
+        margin-top: 25px;
+        padding: 8px 40px;
+        background: $color-2;
+        border-radius: 20px;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+      }
+    }
+
+    .images--area {
+      width: 600px;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 50px;
+      margin-top: 50px;
+
+      img {
+        max-width: 400px;
+      }
+    }
+  }
+  .thumb {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+    li {
+      display: inline-block;
+      margin: 0 20px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      &:hover {
+        transform: translateY(-15px);
+      }
+
+      img {
+        max-width: 60px;
+      }
+    }
+  }
+  .social--media {
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    a {
+      display: inline-block;
+      margin: 5px 0;
+      transform: scale(0.6);
+      filter: invert(1);
+    }
+  }
+  .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $color-2;
+    clip-path: circle(750px at right 850px);
+  }
+}

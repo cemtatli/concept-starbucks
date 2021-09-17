@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" href="assets/img/fav.ico" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle"></div>
+      <header>
+        <a href="index.html">
+          <img class="menu--logo" src="assets/img/header-logo.png" alt="logo" />
+        </a>
+        <ul>
+          <li><a href="#">Coffe</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Store</a></li>
+          <li><a href="#">Starbucks Card </a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="text--content">
+          <h2>
+            Not a simple coffee, <br />
+            <span>this is starbucks!</span>
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+            aperiam! Minima distinctio culpa natus iste, quibusdam voluptate
+            quaerat quae non repellendus earum ex quia impedit!
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="images--area">
+          <img class="coffe" src="assets/img/photos-1.png" alt="photos" />
+        </div>
+      </div>
+      <ul class="thumb">
+        <li>
+          <img
+            src="assets/img/thumb1.png"
+            onclick="imgSlider('assets/img/photos-1.png'); changeCircleColor('#017143')"
+            ;
+            alt="photos"
+          />
+        </li>
+        <li>
+          <img
+            src="assets/img/thumb2.png"
+            onclick="imgSlider('assets/img/photos-2.png'); changeCircleColor('#eb7495')"
+            ;
+            alt="photos"
+          />
+        </li>
+        <li>
+          <img
+            src="assets/img/thumb3.png"
+            onclick="imgSlider('assets/img/photos-3.png'); changeCircleColor('#d752b1')"
+            ;
+            alt="photos"
+          />
+        </li>
+      </ul>
+      <ul class="social--media">
+        <li>
+          <a href="#"><img src="assets/img/twitter.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/img/instagram.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/img/facebook.png" alt="" /></a>
+        </li>
+      </ul>
+    </div>
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.querySelector(".coffe").src = anything;
+      }
+
+      function changeCircleColor(color) {
+        const circle = document.querySelector(".circle");
+        circle.style.background = color;
+      }
+    </script>
+  </body>
+</html>
